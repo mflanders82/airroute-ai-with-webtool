@@ -1,0 +1,8 @@
+# Dependencies
+requests
+pandas
+numpy
+scikit-learn
+matplotlib
+openpyxl
+streamlit
