@@ -2,9 +2,6 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 def train_price_model(df):
-<<<<<<< HEAD
-    """Train a simple linear regression model for price prediction."""
-=======
     """Train a linear regression model to predict flight prices.
 
     Args:
@@ -13,7 +10,6 @@ def train_price_model(df):
     Returns:
         LinearRegression: Trained price prediction model.
     """
->>>>>>> fae6b4a (changes to repo)
     df = df.dropna(subset=['price', 'days_until_departure'])
     X = df[['days_until_departure']]
     y = df['price']
@@ -22,8 +18,6 @@ def train_price_model(df):
     return model
 
 def predict_price(model, days_until_departure):
-<<<<<<< HEAD
-=======
     """Predict the price of a flight given days until departure.
 
     Args:
@@ -33,5 +27,4 @@ def predict_price(model, days_until_departure):
     Returns:
         float: Predicted flight price.
     """
->>>>>>> fae6b4a (changes to repo)
     return model.predict([[days_until_departure]])[0]
