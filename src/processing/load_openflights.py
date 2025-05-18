@@ -1,9 +1,6 @@
 import pandas as pd
 
 def load_routes_data(filepath):
-<<<<<<< HEAD
-    """Load the OpenFlights routes dataset."""
-=======
     """Load and clean airline route data from a CSV file.
 
     Args:
