@@ -4,15 +4,12 @@ from src.api_clients.mock_price_feed import generate_mock_prices
 from src.processing.load_openflights import load_routes_data
 
 def batch_ingest(output_path='data/daily_prices.csv', routes_path='data/routes.csv'):
-<<<<<<< HEAD
-=======
     """Simulate a daily batch ingestion that fetches mock price data for all routes.
 
     Args:
         output_path (str): Path to save the generated price data CSV.
         routes_path (str): Path to the input airline route data CSV.
     """
->>>>>>> fae6b4a (changes to repo)
     today = datetime.today().strftime('%Y-%m-%d')
     routes_df = load_routes_data(routes_path)
     prices_df = generate_mock_prices(routes_df, today)
