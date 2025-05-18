@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # learn-ai
 =======
 # ✈️ AirRoute AI
