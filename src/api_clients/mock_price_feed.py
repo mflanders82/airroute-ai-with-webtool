@@ -2,7 +2,15 @@ import pandas as pd
 import random
 
 def generate_mock_prices(routes_df, date):
-    """Simulate fetching price data for routes on a given date."""
+    """Simulate fetching price data for airline routes on a specific date.
+
+    Args:
+        routes_df (pd.DataFrame): Airline route data (must include 'source_airport', 'destination_airport', and 'airline').
+        date (str): Date string in 'YYYY-MM-DD' format.
+
+    Returns:
+        pd.DataFrame: Simulated pricing data including route, price, and days until departure.
+    """
     mock_data = []
     for _, row in routes_df.iterrows():
         price = random.randint(100, 1200)
